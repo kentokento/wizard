@@ -52,6 +52,7 @@ type ORM interface {
 	CloseAll(Identifier)
 }
 
+// Session is interface for xorm.Session
 type Session interface {
 	xorm.Interface
 
@@ -76,7 +77,7 @@ type Session interface {
 	Sync2(...interface{}) error
 }
 
-// Engine is interface for xorm.Engine (xorm)
+// Engine is interface for xorm.Engine
 type Engine interface {
 	xorm.EngineInterface
 
